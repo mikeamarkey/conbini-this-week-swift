@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    let newItemCount = 150
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 16) {
+            HeadingView()
+            ControlsView()
         }
-        .padding()
     }
 }
 
