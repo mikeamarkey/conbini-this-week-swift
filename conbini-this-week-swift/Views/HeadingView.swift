@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeadingView: View {
-    @State private var newItemCount: Int = 0
+    var newItemCount: Int = 0
 
     var body: some View {
         VStack {
@@ -25,6 +25,6 @@ struct HeadingView: View {
 
 struct HeadingView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadingView()
+        HeadingView(newItemCount: 10)
     }
 }

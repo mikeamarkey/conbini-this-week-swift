@@ -24,8 +24,10 @@ struct ControlsView: View {
             )
             .padding()
 
-            Text("Currently showing \(String(filteredCount)) items from input: \(filterState)")
-                .padding()
+            Text(
+                "Currently showing \(String(filteredCount)) items from input: \(filterState)"
+            )
+            .padding(.horizontal)
         }
     }
 }
