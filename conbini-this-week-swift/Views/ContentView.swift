@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    let newItemCount = 150
+    var items: [Item] = []
 
     var body: some View {
         VStack(spacing: 16) {
-            HeadingView(newItemCount: newItemCount)
+            HeadingView(newItemCount: items.count)
             ControlsView()
         }
     }
@@ -20,6 +20,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(items: mockedItems)
     }
 }
