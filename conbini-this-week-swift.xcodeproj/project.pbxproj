@@ -11,8 +11,8 @@
 		050BABA82A466E980039F0EA /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BABA72A466E980039F0EA /* ControlsView.swift */; };
 		050BABAA2A4677DF0039F0EA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BABA92A4677DF0039F0EA /* ListView.swift */; };
 		050BABB12A4678940039F0EA /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050BABB02A4678930039F0EA /* ItemModel.swift */; };
+		051C55FF2A51082A00B8F814 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051C55FE2A51082900B8F814 /* ContentView.swift */; };
 		051F51BC2A465FE1006F0A88 /* conbini_this_week_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F51BB2A465FE1006F0A88 /* conbini_this_week_swiftApp.swift */; };
-		051F51BE2A465FE1006F0A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F51BD2A465FE1006F0A88 /* ContentView.swift */; };
 		051F51C02A465FE2006F0A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051F51BF2A465FE2006F0A88 /* Assets.xcassets */; };
 		051F51C32A465FE2006F0A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 051F51C22A465FE2006F0A88 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -22,9 +22,9 @@
 		050BABA72A466E980039F0EA /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		050BABA92A4677DF0039F0EA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		050BABB02A4678930039F0EA /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		051C55FE2A51082900B8F814 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		051F51B82A465FE1006F0A88 /* conbini-this-week-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "conbini-this-week-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		051F51BB2A465FE1006F0A88 /* conbini_this_week_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conbini_this_week_swiftApp.swift; sourceTree = "<group>"; };
-		051F51BD2A465FE1006F0A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		051F51BF2A465FE2006F0A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		051F51C22A465FE2006F0A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +51,8 @@
 		050BABAF2A4678760039F0EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				051C55FE2A51082900B8F814 /* ContentView.swift */,
 				050BABA72A466E980039F0EA /* ControlsView.swift */,
-				051F51BD2A465FE1006F0A88 /* ContentView.swift */,
 				050BABA52A466E340039F0EA /* HeadingView.swift */,
 				050BABA92A4677DF0039F0EA /* ListView.swift */,
 			);
@@ -167,7 +167,7 @@
 			files = (
 				050BABB12A4678940039F0EA /* ItemModel.swift in Sources */,
 				050BABA82A466E980039F0EA /* ControlsView.swift in Sources */,
-				051F51BE2A465FE1006F0A88 /* ContentView.swift in Sources */,
+				051C55FF2A51082A00B8F814 /* ContentView.swift in Sources */,
 				050BABAA2A4677DF0039F0EA /* ListView.swift in Sources */,
 				050BABA62A466E340039F0EA /* HeadingView.swift in Sources */,
 				051F51BC2A465FE1006F0A88 /* conbini_this_week_swiftApp.swift in Sources */,

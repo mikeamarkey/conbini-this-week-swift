@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var textFilter: String = ""
     var items: [Item] = []
+
+    var filteredItems: [Item] {
+        items.filter { item in (textFilter == "") || item.title.contains(textFilter) }
+    }
 
     var body: some View {
         VStack(spacing: 16) {
             HeadingView(newItemCount: items.count)
-            ControlsView()
+            ControlsView(textFilter: $textFilter, filteredItems: filteredItems)
+            ListView(items: filteredItems)
         }
     }
 }

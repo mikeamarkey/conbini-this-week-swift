@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeadingView: View {
-    var newItemCount: Int = 0
+    var newItemCount: Int
 
     var body: some View {
         VStack {

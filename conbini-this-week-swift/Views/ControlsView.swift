@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ControlsView: View {
-    @State private var filterState: String = ""
-    @State private var filteredCount: Int = 0
+    @Binding var textFilter: String
+    var filteredItems: [Item]
 
     var body: some View {
         VStack {
             TextField(
                 "Search for items...",
-                text: $filterState
+                text: $textFilter
             )
             .padding()
             .overlay(
@@ -25,7 +25,7 @@ struct ControlsView: View {
             .padding()
 
             Text(
-                "Currently showing \(String(filteredCount)) items from input: \(filterState)"
+                "Currently showing \(String(filteredItems.count)) items"
             )
             .padding(.horizontal)
         }
@@ -34,6 +34,6 @@ struct ControlsView: View {
 
 struct ControlsView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlsView()
+        ControlsView(textFilter: .constant(""), filteredItems: mockedItems)
     }
 }
